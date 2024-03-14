@@ -57,26 +57,25 @@ body {
 
 .browse-container {
     background: #ffffff;
+    height: auto;
     display: flex;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
     margin: 20px 300px 20px 300px;
+    justify-content: center;
     border: 1px, #000000;
     border-style: solid;
     border-radius: 4px;
-
 }
 
 .browse-content {
     color: #000000;
     width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
+    max-width: 1700px;
+    display: inline-block;
+    column-count: 10;
+    column-gap: 10px;
+    position: relative;
+    padding: 10px;
+    margin: 20px;
 }
 
 .footer-container {
