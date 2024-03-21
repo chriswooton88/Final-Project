@@ -55,18 +55,41 @@ body {
     margin: 0 auto;
 }
 
-.browse-container {
+.popular-container {
     background: #ffffff;
     height: auto;
     display: flex;
-    margin: 20px 300px 20px 300px;
+    margin: 20px 600px 20px 600px;
     justify-content: center;
     border: 1px, #000000;
     border-style: solid;
     border-radius: 4px;
 }
 
-.browse-content {
+.popular-content {
+    color: #000000;
+    width: 100%;
+    max-width: 1700px;
+    display: inline-block;
+    column-count: 10;
+    column-gap: 10px;
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+}
+
+.trending-container {
+    background: #ffffff;
+    height: auto;
+    display: flex;
+    margin: 20px 600px 20px 600px;
+    justify-content: center;
+    border: 1px, #000000;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.trending-content {
     color: #000000;
     width: 100%;
     max-width: 1700px;
@@ -109,6 +132,17 @@ a:focus {
 }
 a:hover, a:active {
 
+}
+
+.main-nav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
 }
 
 .body-container .btn, .body-container .btn:visited  {
@@ -236,6 +270,17 @@ section p {
     display: none;
 }
 
+.main-nav .search-container {
+    float: right;
+}
+  
+.main-nav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+  
 .mobile-nav span a {
     font-size: 48px;
     padding: 8px;
@@ -280,6 +325,20 @@ footer {
 
 
 
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
 }
 
 @media only screen and (min-width: 768px) {
