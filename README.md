@@ -1,7 +1,5 @@
 # PodPulse
 
-<b>PodPulse</b> is a student project for CodeKentucky that will allow you to find new podcasts, created by <i>Chris Wooton</i>.
-
 ## About
 
 This website is designed to help avid podcast listeners discover new podcasts to enjoy, and link them directly to their feeds.
