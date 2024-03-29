@@ -11,21 +11,21 @@ try {
 	result.results.map((item) =>{
         console.log(item)
         const {collectionName, artworkUrl600, trackViewUrl, collectionViewUrl, primaryGenreName}=item;
-        console.log(collectionName, artworkUrl600, trackViewUrl, primaryGenreName);
+        console.log(collectionName, artworkUrl600, trackViewUrl, collectionViewUrl, primaryGenreName);
         const itemElement=window.document.createElement("a");
         itemElement.setAttribute("href", collectionViewUrl);
         const collectionNameElement=window.document.createElement("h2");
         const imageElement=window.document.createElement("img");
-        const genreElement = window.document.createElement("small");
+        const genreElement=window.document.createElement("small");
         itemElement.style.marginRight = "20px";
         imageElement.classList.add('podcast-image');
         genreElement.classList.add('small-genre');
-        imageElement.setAttribute("src", artworkUrl600);
-        collectionNameElement.textContent=collectionName;
         genreElement.textContent = primaryGenreName;
-        imageElement.after(genreElement);
-        itemElement.append(imageElement);
-        containerElement.append(itemElement);
+        imageElement.setAttribute("src", artworkUrl600);
+        genreElement.setAttribute("src", primaryGenreName);
+        itemElement.appendChild(imageElement);
+        itemElement.appendChild(genreElement);
+        containerElement.appendChild(itemElement);
     });
 } catch (error) {
 	console.error(error);
